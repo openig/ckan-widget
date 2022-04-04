@@ -4,7 +4,7 @@ import { reducer as formReducer } from 'redux-form';
 const initialState = {
   form: {},
   packageSearch: {
-    ckanAPI: 'https://trouver.datasud.fr',
+    ckanAPI: 'https://ckan.openig.org/dataset',
     datasets: [],
     search_facets: {},
     organizations: [],
