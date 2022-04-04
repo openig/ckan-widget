@@ -4,7 +4,7 @@ import {
 } from '../actions/types';
 
 const INITIAL_STATE = {
-  ckanAPI: 'https://trouver.datasud.fr',
+  ckanAPI: 'https://ckan.openig.org/dataset',
   datasets: [],
   search_facets: {},
   organizations: [],
