@@ -13,8 +13,8 @@ const store = createStoreWithMiddleware(reducers);
 
 // Configuration for running Widget locally for testing purposes
 // var localConfig = {
-//      ckan_api: 'https://trouver.datasud.fr',
-//      link_to_ckan_label: 'Voir sur Datasud.fr',
+//      ckan_api: 'https://ckan.openig.org/dataset',
+//      link_to_ckan_label: 'Voir sur OPenIG',
 //      ckan_organizations: [],
 //      ckan_groups: [],
 //      ckan_tags: [],
@@ -35,8 +35,8 @@ class CKANWidget {
   }
 
   init = ({
-    ckan_api = 'https://trouver.datasud.fr',
-    link_to_ckan_label = 'Voir sur Datasud.fr',
+    ckan_api = 'https://ckan.openig.org/dataset',
+    link_to_ckan_label = 'Voir sur OPenIG',
     ckan_organizations = [],
     ckan_groups = [],
     ckan_tags = [],
