@@ -161,7 +161,7 @@ var config = {
 
 Propriétés de configuration :
 
-* **ckan-api** : URL de l’API de Ckan. Par défaut, `trouver.datasud.fr`. 
+* **ckan-api** : URL de l’API de Ckan. Par défaut, `ckan.openig.org/dataset`. 
 * **ckan-organizations** : noms des organisations CKAN à récupérer. Par défaut All. Sinon, liste des ID des organisations séparés par des virgules.
 * **ckan-groups** : noms de groupes CKAN à récupérer. Par défaut All. Sinon, liste des ID de groupes séparés par des virgules. 
 * **ckan-facets** : paire de valeurs clés à utiliser pour filtrer les champs. 
