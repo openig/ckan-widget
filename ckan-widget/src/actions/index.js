@@ -16,7 +16,7 @@ if (process.env.REACT_APP_API_KEY !== undefined) {
 }
 
 export function packageSearch({
-  ckanAPI = 'https://trouver.datasud.fr', q = '*:*', rows = 10, start = 0, page = 0, sort = 'score desc, metadata_modified desc', fq='',
+  ckanAPI = 'https://ckan.openig.org/dataset', q = '*:*', rows = 10, start = 0, page = 0, sort = 'score desc, metadata_modified desc', fq='',
   firstCall = false, organizations = [], groups = [], tags = []} = {}) {
   const facetsParams = `facet.field=${JSON.stringify(['organization',
                                                       'groups',
@@ -62,12 +62,12 @@ export function packageSearch({
   };
 }
 
-export function packageAutocomplete({ ckanAPI = 'https://trouver.datasud.fr', q = '', limit = 10, organization = [] } = {}) {
+export function packageAutocomplete({ ckanAPI = 'https://ckan.openig.org/dataset', q = '', limit = 10, organization = [] } = {}) {
   return axios.get(`${ckanAPI}/api/action/package_autocomplete?q=${q}&limit=${limit}&organization=${organization}`, axiosConfig)
     .then(response => response.data);
 }
 
-export function organizationShow({ ckanAPI = 'https://trouver.datasud.fr', id = '' } = {}) {
+export function organizationShow({ ckanAPI = 'https://ckan.openig.org/dataset', id = '' } = {}) {
   return (dispatch) => {
     axios.get(`${ckanAPI}/api/action/organization_show?id=${id}&include_dataset_count=false&include_extras=false&include_users=false&include_groups=false`, axiosConfig)
     .then((response) => {
@@ -92,7 +92,7 @@ export function organizationShow({ ckanAPI = 'https://trouver.datasud.fr', id = 
   };
 }
 
-export function groupShow({ ckanAPI = 'https://trouver.datasud.fr', id = '' } = {}) {
+export function groupShow({ ckanAPI = 'https://ckan.openig.org/dataset', id = '' } = {}) {
   return (dispatch) => {
     axios.get(`${ckanAPI}/api/action/group_show?id=${id}&include_dataset_count=false&include_extras=false&include_users=false&include_groups=false`, axiosConfig)
       .then((response) => {
@@ -117,7 +117,7 @@ export function groupShow({ ckanAPI = 'https://trouver.datasud.fr', id = '' } = 
   };
 }
 
-export function tagShow({ ckanAPI = 'https://trouver.datasud.fr', id = '' } = {}) {
+export function tagShow({ ckanAPI = 'https://ckan.openig.org/dataset', id = '' } = {}) {
   return (dispatch) => {
     axios.get(`${ckanAPI}/api/action/tag_show?id=${id}&include_dataset_count=false&include_extras=false&include_users=false&include_groups=false`, axiosConfig)
       .then((response) => {
