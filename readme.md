@@ -161,7 +161,7 @@ var config = {
 
 Configuration properties:
 
-* **ckan-api**: Ckan API URL. Default to the `trouver.datasud.fr` one.
+* **ckan-api**: Ckan API URL. Default to the `ckan.openig.org/dataset` one.
 * **ckan-organizations**: CKAN Organizations names to be retrieved. Default to All. Else, comma separated list of Organizations IDs.
 * **ckan-groups**: CKAN Groups names to be retrieved. Default to All. Else, comma separated list of Groups IDs.
 * **ckan-facets**: key-values pair to be used to filter on the facets.
