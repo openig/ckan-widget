@@ -5,7 +5,7 @@ describe('Test package search redicer', () => {
   it('test initial state', () => {
     const action = { type: 'dummy_action' }
     const initialState = {
-      ckanAPI: 'https://trouver.datasud.fr',
+      ckanAPI: 'https://ckan.openig.org/dataset',
       datasets: [],
       search_facets: {},
       organizations: [],
@@ -32,7 +32,7 @@ describe('Test package search redicer', () => {
     }
 
     const newState = {
-      ckanAPI: 'https://trouver.datasud.fr',
+      ckanAPI: 'https://ckan.openig.org/dataset',
       datasets: [],
       search_facets: {},
       organizations: [],
@@ -55,7 +55,7 @@ describe('Test package search redicer', () => {
   it('test package search', () => {
     const action = {
       type: PACKAGE_SEARCH,
-      ckanAPI: 'https://trouver.datasud.fr',
+      ckanAPI: 'https://ckan.openig.org/dataset',
       search: '',
       organizations: [],
       groups: [],
@@ -77,7 +77,7 @@ describe('Test package search redicer', () => {
     }
 
     const newState = {
-      ckanAPI: 'https://trouver.datasud.fr',
+      ckanAPI: 'https://ckan.openig.org/dataset',
       datasets: ['dataset1', 'dataset2'],
       search_facets: {
         organizations: ['org1']
